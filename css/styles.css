@@ -1,42 +1,33 @@
-/* BASE STYLES */
 * {
-    margin: 0;
     padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
 
-/* GRID */
-.grid-container {
-    display: grid;
-    grid-template-areas: 
-    "nav"
-    "header"
-    "projects"
-    "music"
-    "contact"
-    "footer";
+.container {
+    min-height: 100vh;
+    width: 100%;
+    background-color: #2b323c;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
-nav {
-    grid-area: nav;
-    background-color: aqua;
+.container h1 {
+    font-size: 5rem;
 }
-header {
-    grid-area: header;
-    background-color: bisque;
+.container h3 {
+    font-size: 4rem;
+    font-weight: 500;
 }
-.projects {
-    grid-area: projects;
-    background-color: blueviolet;
+
+.name {
+    color: #fff724;
 }
-.music {
-    grid-area: music;
-    background-color: burlywood;
-}
-.contact {
-    grid-area: contact;
-    background-color: chocolate;
-}
-footer {
-    grid-area: footer;
-    background-color: crimson;
+.auto-type {
+    border-bottom: 2px solid #fff724;
+    color: white;
 }
