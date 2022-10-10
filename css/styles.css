@@ -1,0 +1,38 @@
+/* GRID */
+.grid-container {
+    display: grid;
+    width: 100vw;
+    height: 100vh;
+    grid-template-areas: 
+    "nav"
+    "header"
+    "projects"
+    "music"
+    "contact"
+    "footer";
+}
+
+nav {
+    grid-area: nav;
+    background-color: aqua;
+}
+header {
+    grid-area: header;
+    background-color: bisque;
+}
+.projects {
+    grid-area: projects;
+    background-color: blueviolet;
+}
+.music {
+    grid-area: music;
+    background-color: burlywood;
+}
+.contact {
+    grid-area: contact;
+    background-color: chocolate;
+}
+footer {
+    grid-area: footer;
+    background-color: crimson;
+}
