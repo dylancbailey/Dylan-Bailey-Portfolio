@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Dylan Bailey</title>
+    <title>Dylan Bailey - Web Developer</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
@@ -15,11 +15,11 @@
     <header class="container header">
       <nav class="nav">
         <ul class="nav-list">
-          <li class="nav-item nav-lead"><a href="#">Dylan Bailey</a></li>
-          <li class="nav-item><a href="#">Profile</a></li>
-          <li class="nav-item><a href="#">Projects</a></li>
-          <li class="nav-item><a href="#">Music</a></li>
-          <button>yo</button>
+          <li class="nav-lead"><a href="#">Dylan Bailey</a></li>
+          <li class="nav-item"><a href="#">Profile</a></li>
+          <li class="nav-item"><a href="#">Projects</a></li>
+          <li class="nav-item"><a href="#">Music</a></li>
+          <button class="theme-btn">yo</button>
         </ul>
       </nav>
     </header>
@@ -28,41 +28,65 @@
       <section class="section bio">
         <h1 class="bio-heading">Front-End Web Developer using JavaScript to make the web beautiful.</h1>
         <p class="bio-blurb">Howdy, I'm Dylan, a developer based in Florida. I love learning JavaScript and how to make engaging experiences through code.</p>
-        <p><a href="#">View profile</a></p>
+        <p class="bio-link"><a href="#">View profile</a></p>
       </section>
   
       <section class="section projects">
         <h2 class="section-heading">Recent work</h2>
-        <a href="#">image.png
-          <figure>
-            <img src="" alt="">
-          </figure>
-          <div>
-            <h3 class="project-heading">Project 1</h3>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde, aspernatur ea? Incidunt harum obcaecati repellendus!</p>
-            <p>Read more</p>
-          </div>
-        </a>
-        <a href="#">
-          <figure>
-            <img src="" alt="">
-          </figure>
-          <div>
-            <h3 class="project-heading">Project 2</h3>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde, aspernatur ea? Incidunt harum obcaecati repellendus!</p>
-            <p>Read more</p>
-          </div>
-        </a>
-        <a href="#">
-          <figure>
-            <img src="" alt="">
-          </figure>
-          <div>
-            <h3 class="project-heading">Project 3</h3>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde, aspernatur ea? Incidunt harum obcaecati repellendus!</p>
-            <p>Read more</p>
-          </div>
-        </a>
+        <div class="project-container">
+          <a class="project-wrapper" href="#">
+
+              <figure class="img-wrapper">
+                <img class="project-img" src="img/emoji-app.png" alt="">
+              </figure>
+              <div class="project-info">
+                <h3 class="project-heading">Word Guessing App</h3>
+                <p class="project-desc">Emoji guessing game built with pure JavaScript and CSS.</p>
+                <p class="read-more">Read more</p>
+              </div>
+
+          </a>
+        </div>
+
+        <div class="project-container">
+          <a class="project-wrapper" href="#">
+            <figure class="img-wrapper">
+              <img class="project-img" src="img/web-app-dashboard.png" alt="">
+            </figure>
+            <div class="project-info">
+              <h3 class="project-heading">Web Dashboard App</h3>
+              <p class="project-desc">Responsive site using CSS Grid, FlexBox and JavaScript for responsive graphs.</p>
+              <p class="read-more">Read more</p>
+            </div>
+          </a>
+        </div>
+
+        <div class="project-container">
+          <a class="project-wrapper" href="#">
+            <figure class="img-wrapper">
+              <img class="project-img" src="img/employee-directory.png" alt="">
+            </figure>
+            <div class="project-info">
+              <h3 class="project-heading">Employee Directory</h3>
+              <p class="project-desc">Employee Directory using Fetch API to populate dynamically.</p>
+              <p class="read-more">Read more</p>
+            </div>
+          </a>
+        </div>
+
+        <div class="project-container">
+          <a class="project-wrapper" href="#">
+            <figure class="img-wrapper">
+              <img class="project-img" src="img/bootstrap.png" alt="">
+            </figure>
+            <div class="project-info">
+              <h3 class="project-heading">Bootstrap Mockup</h3>
+              <p class="project-desc">Responsive website using Bootstrap 5.</p>
+              <p class="read-more">Read more</p>
+            </div>
+          </a>
+        </div>
+
         <p><a href="#">View all work</a></p>
       </section>
     </main>
