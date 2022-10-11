@@ -7,90 +7,51 @@
     --peach-orange: #F2CC8F;
 }
 
-* {
-    padding: 0;
+/* BASE STYLES */
+body {
     margin: 0;
+    padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
+    font-weight: 300;
 }
-
+a {
+    text-decoration: none;
+    color: var(--beige);
+}
 ul {
-    background-color: var(--jacarta);
-    width: 100vw;
-    display: flex;
-    position: fixed;
-    list-style-type: none;
-    align-content: center;
-    justify-content: center;
-    padding: 1rem;
+    padding: 0;
+    margin: 0;
 }
-ul li {
-    color: #5c5f8a;
-    padding: .5rem;
-    border: 1px solid #5c5f8a;
-    border-radius: 10px;
-    margin: 0 .5rem 0 .5rem;
+li {
+    list-style: none;
 }
 
-.scroll-container {
-    scroll-snap-type: y proximity;
-    overflow-y: scroll;
-    height: 100vh;
-    width: 100vw;
-}
-
-.container {
-    height: 100vh;
-    width: 640px;
+/* DARK/LIGHT */
+.dark-theme {
     background-color: var(--jacarta);
     color: var(--beige);
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-    justify-content: center;
-    scroll-snap-align: start;
 }
-
-.container h2, h3 {
-    font-size: 2rem;
-    font-weight: 400;
-}
-
-.container .title {
-    font-weight: 500;
-    font-size: 3rem;
-}
-
-.test2 {
+.light-theme {
     background-color: var(--beige);
-    height: 100vh;
-    width: 100%;
-}
-.test2 h2 {
     color: var(--jacarta);
 }
 
-.cards {
+/* NAV */
+.nav {
+    max-width: 640px;
+    height: 5rem;
+    margin: 0 auto;
+}
+.nav-list {
+    height: 100%;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
-    width: 100%;
-    height: 300px;
+    gap: .7rem;
+    padding: 0 .5rem;
 }
-.card {
-    height: 50%;
-    width: 70%;
-    color: var(--terra-cotta);
-    border: 2px solid var(--jacarta);
-    margin-top: 1rem;
-}
-
-
-.name {
-    color: var(--terra-cotta);
-}
-.auto-type {
-    border-bottom: 2px solid var(--terra-cotta);
-    color: var(--terra-cotta);
+.nav-lead {
+    margin-right: auto;
 }
