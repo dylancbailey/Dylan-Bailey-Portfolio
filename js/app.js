@@ -10,7 +10,5 @@ const nav = document.querySelector('.nav-list');
 
 hamburger.addEventListener('click', () => {
   hamburger.classList.toggle('active');
-  nav.forEach(e => {
-    console.log(e.target);
-  });
+  nav.classList.toggle('active');
 });
