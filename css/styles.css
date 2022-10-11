@@ -5,29 +5,47 @@
     font-family: 'Poppins', sans-serif;
 }
 
+.scroll-container {
+    scroll-snap-type: y proximity;
+    overflow-y: scroll;
+    height: 100vh;
+    width: 100vw;
+}
+
 .container {
-    min-height: 100vh;
+    height: 100vh;
     width: 100%;
-    background-color: #2b323c;
-    color: white;
+    background-color: #3D405B;
+    color: #F4F1DE;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-content: center;
     justify-content: center;
+    text-align: center;
+    scroll-snap-align: start;
+}
+
+.test {
+    background-color: #F4F1DE;
+    height: 100vh;
+    width: 100%;
+}
+.test h1 {
+    color: #3D405B;
 }
 
 .container h1 {
-    font-size: 5rem;
+    font-size: 3rem;
 }
-.container h3 {
-    font-size: 4rem;
+.container h2, h3 {
+    font-size: 2rem;
     font-weight: 500;
 }
 
 .name {
-    color: #fff724;
+    color: #E07A5F;
 }
 .auto-type {
-    border-bottom: 2px solid #fff724;
-    color: white;
+    border-bottom: 2px solid #E07A5F;
+    color: #E07A5F;
 }
