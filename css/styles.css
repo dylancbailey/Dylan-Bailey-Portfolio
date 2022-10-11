@@ -41,14 +41,13 @@ ul li {
 
 .container {
     height: 100vh;
-    width: 100%;
+    width: 640px;
     background-color: var(--jacarta);
     color: var(--beige);
     display: flex;
     flex-direction: column;
     align-content: center;
     justify-content: center;
-    text-align: center;
     scroll-snap-align: start;
 }
 
@@ -71,10 +70,20 @@ ul li {
     color: var(--jacarta);
 }
 
+.cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 300px;
+}
 .card {
-    height: 100vh;
-    width: 100vw;
+    height: 50%;
+    width: 70%;
     color: var(--terra-cotta);
+    border: 2px solid var(--jacarta);
+    margin-top: 1rem;
 }
 
 
