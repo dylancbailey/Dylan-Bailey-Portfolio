@@ -19,6 +19,8 @@ body {
     line-height: 1.15;
     background: rgb(248,177,149);
     background: linear-gradient(180deg, rgba(248,177,149,1) 0%, rgba(246,114,128,1) 19%, rgba(192,108,132,1) 30%, rgba(108,91,123,1) 48%, rgba(35,41,70,1) 100%);
+    background-size: 400% 400%;
+    position: relative;
     color: var(--text-white);
 }
 p {
@@ -44,6 +46,10 @@ li {
     color: var(--highlight);
     border-radius: 5px;
 }
+.highlight {
+    color: var(--highlight);
+    font-weight: bold;
+}
 
 /* NAV */
 .nav {
@@ -66,6 +72,20 @@ li {
     font-size: 1rem;
 }
 
+/* HAMBURGER */
+.hamburger {
+    display: none;
+    cursor: pointer;
+}
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    transition: all 0.3s ease-in-out;
+    background-color: var(--text-white);
+}
+
 /* CONTAINER */
 .container {
     width: 100%;
@@ -84,6 +104,9 @@ li {
 }
 
 /* BIO */
+.bio {
+    padding-top: 7rem;
+}
 .bio-heading {
     font-weight: 500;
     font-size: 3rem;
@@ -140,6 +163,34 @@ li {
 
 /* MEDIA QUERIES */
 @media screen and (min-width: 640px) {
+    .hamburger {
+        display: block;
+    }
+
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+    .nav-item {
+        position: fixed;
+        left: 100%;
+        top: 70px;
+        gap: 0;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+    }
+    .nav-item.active {
+        position:absolute;
+        left: 0;
+    }
+
     .project-wrapper {
         display: flex;
         flex-direction: row;
