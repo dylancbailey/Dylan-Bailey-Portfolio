@@ -157,6 +157,7 @@ li {
     max-width: 640px;
     padding: 0 2rem;
     margin: 0 auto;
+    z-index: 99;
 }
 .section-heading {
     font-weight: 500;
@@ -167,15 +168,58 @@ li {
     margin-bottom: 0;
 }
 
+/* BUBBLES */
+.bubbles {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    z-index: -100;
+}
+.bubble-left {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-color: var(--main-color);
+    border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+    top: -100px;
+    left: 100px;
+    opacity: .3;
+    animation: morphBubbleLeft 20s ease-in-out infinite;
+}
+.bubble-middle {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    background-color: var(--main-color);
+    border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+    opacity: .3;
+    top: -100px;
+    left: 180px;
+    animation: morphBubbleMiddle 20s ease-in-out infinite;
+}
+.bubble-right {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-color: var(--main-color);
+    border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+    opacity: .3;
+    top: -80px;
+    left: 350px;
+    animation: morphBubbleRight 20s ease-in-out infinite;
+}
+
 /* BIO */
 .bio {
     padding-top: 7rem;
+    z-index: 99;
 }
 .bio-heading {
     font-weight: 500;
     font-size: 3rem;
     letter-spacing: -.15rem;
     margin-top: 0;
+    z-index: 100;
 }
 .bio-link {
     margin: 1rem 0;
@@ -266,3 +310,71 @@ li {
 }
 
 /* KEYFRAMES */
+@keyframes morphBubbleMiddle {
+    0% {
+        border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+        top: -100px;
+        left: 180px;
+    }
+    50% {
+        border-radius: 80% 20% 46% 54% / 64% 75% 25% 36%;
+        top: -30px;
+        left: 190px;
+    }
+    75% {
+        border-radius: 25% 75% 46% 54% / 51% 34% 66% 49%;
+        top: -55px;
+        left: 200px;
+    }
+    100% {
+        border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+        top: -100px;
+        left: 180px;
+    }
+}
+
+@keyframes morphBubbleLeft {
+    0% {
+        border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+        top: -100px;
+        left: 100px;
+    }
+    50% {
+        border-radius: 41% 59% 57% 43% / 66% 56% 44% 34%;
+        top: -70px;
+        left: 80px;
+    }
+    75% {
+        border-radius: 71% 29% 44% 56% / 47% 56% 44% 53%;
+        top: -60px;
+        left: 75px;
+    }
+    100% {
+        border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+        top: -100px;
+        left: 100px;
+    }
+}
+
+@keyframes morphBubbleRight {
+    0% {
+        border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+        top: -80px;
+        left: 350px;
+    }
+    50% {
+        border-radius: 24% 76% 65% 35% / 49% 58% 42% 51%;
+        top: -70px;
+        left: 340px;
+    }
+    75% {
+        border-radius: 24% 76% 44% 56% / 66% 25% 75% 34%;
+        top: -65px;
+        left: 360px;
+    }
+    100% {
+        border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+        top: -80px;
+        left: 350px;
+    }
+}
