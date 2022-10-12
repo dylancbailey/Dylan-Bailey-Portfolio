@@ -1,8 +1,10 @@
 /* COLORS */
 :root {
     --text-white: #fcfbfc;
-    --main-color-dark: #355C7D;
+    --main-color: #355C7D;
+    --main-color-darker: #223b51;
     --highlight: #F67280;
+    --peach: #F8B195;
 }
 
 /* BASE STYLES */
@@ -127,8 +129,8 @@ li {
     min-height: 10vh;
     display: block;
     z-index: 98;
-    background-color: var(--main-color-dark);
-    padding-top: 90px;
+    background-color: var(--main-color-darker);
+    padding-top: 70px;
     padding-bottom: 20px;
     transition: 0.3s;
 }
@@ -139,10 +141,19 @@ li {
 .mobile-nav-list {
     display: flex;
     align-items: flex-start;
+    justify-content: center;
     flex-direction: column;
-    gap: 1rem;
-    padding-left: 1rem;
+    gap: .5rem;
     padding: 0 2rem;
+}
+.mobile-nav-item {
+    font-size: 1rem;
+    border-radius: 5px;
+    background-color: var(--main-color);
+    padding-right: 4.8rem;
+}
+.mobile-nav-item:nth-child(2) {
+    padding-right: 3.8rem;
 }
 
 /* CONTAINER */
@@ -184,12 +195,14 @@ li {
     font-weight: 500;
     font-size: 1.2rem;
     margin: 1rem 0;
+    color: var(--main-color-darker)
 }
 .project-container {
     margin-bottom: 2.5rem;
     padding: 1.5rem;
     border-radius: 5px;
     background-color: var(--text-white);
+    box-shadow: 0px 2px 5px rgba(0,0,0,.3);
 }
 .project-container:nth-child(5) {
     margin-bottom: 2rem;
@@ -200,14 +213,14 @@ li {
     border-radius: 5px;
 }
 .project-info {
-    color: var(--main-color-dark);
+    color: var(--main-color);
 }
 .project-desc {
     font-size: 1rem;
 }
 .read-more {
     padding-top: 1rem;
-    border-bottom: 2px solid var(--main-color-dark);
+    border-bottom: 2px solid var(--main-color);
     width: 6.2rem;
 }
 
