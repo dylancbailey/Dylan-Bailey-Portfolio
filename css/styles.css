@@ -44,12 +44,7 @@ li {
     font-weight: 400;
 }
 
-/* DARK/LIGHT */
-.cute {
-    background-color: var(--text-white);
-    color: var(--highlight);
-    border-radius: 5px;
-}
+/* HIGHLIGHT*/
 .highlight {
     color: var(--highlight);
     font-weight: bold;
