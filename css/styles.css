@@ -1,6 +1,6 @@
 /* COLORS */
 :root {
-    --text-white: #fcfbfc;
+    --main-white: #fcfbfc;
     --main-color: #355C7D;
     --main-color-darker: #223b51;
     --highlight: #F67280;
@@ -25,7 +25,7 @@ body {
     background: linear-gradient(180deg, rgba(248,177,149,1) 0%, rgba(246,114,128,1) 19%, rgba(192,108,132,1) 30%, rgba(108,91,123,1) 48%, rgba(35,41,70,1) 100%);
     background-size: 400% 400%;
     position: relative;
-    color: var(--text-white);
+    color: var(--main-white);
 }
 p {
     line-height: 1.6;
@@ -33,7 +33,7 @@ p {
 }
 a {
     text-decoration: none;
-    color: var(--text-white);
+    color: var(--main-white);
 }
 ul {
     padding: 0;
@@ -107,7 +107,7 @@ li {
     height: 3px;
     margin: 5px auto;
     transition: all 0.3s ease-in-out;
-    background-color: var(--text-white);
+    background-color: var(--main-white);
 }
 .bar:nth-child(2) {
     width: 15px;
@@ -242,7 +242,7 @@ li {
     margin-bottom: 2.5rem;
     padding: 1.5rem;
     border-radius: 5px;
-    background-color: var(--text-white);
+    background-color: var(--main-white);
     box-shadow: 0px 2px 5px rgba(0,0,0,.3);
 }
 .project-container:nth-child(5) {
@@ -262,7 +262,7 @@ li {
 .read-more {
     padding-top: 1rem;
     border-bottom: 2px solid var(--main-color);
-    width: 6.2rem;
+    width: 5.8rem;
 }
 
 /* FOOTER */
