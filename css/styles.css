@@ -21,9 +21,14 @@ body {
     font-weight: 300;
     font-size: 18px;
     line-height: 1.15;
-    background: rgb(248,177,149);
+    /* background: rgb(248,177,149);
     background: linear-gradient(180deg, rgba(248,177,149,1) 0%, rgba(246,114,128,1) 19%, rgba(192,108,132,1) 30%, rgba(108,91,123,1) 48%, rgba(35,41,70,1) 100%);
-    background-size: 400% 400%;
+    background-size: 400% 400%; */
+    background: linear-gradient(270deg, #c06c84, #6c5b7b);
+    background-size: 800% 800%;
+    -webkit-animation: gradientPulse 45s ease infinite;
+    -moz-animation: gradientPulse 45s ease infinite;
+    animation: gradientPulse 45s ease infinite;
     position: relative;
     color: var(--main-white);
 }
@@ -398,4 +403,20 @@ li {
         top: -80px;
         left: 350px;
     }
+}
+
+@-webkit-keyframes gradientPulse {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-moz-keyframes gradientPulse {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@keyframes gradientPulse {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
 }
