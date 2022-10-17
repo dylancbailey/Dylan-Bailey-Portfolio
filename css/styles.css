@@ -233,6 +233,9 @@ li {
     margin-top: 3rem;
     z-index: 100;
 }
+.bio-blurb {
+    margin-bottom: 1rem;
+}
 .bio-link {
     margin: 1rem 0;
 }
