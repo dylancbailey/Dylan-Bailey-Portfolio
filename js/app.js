@@ -1,10 +1,3 @@
-// new Typed('.auto-type', {
-//   strings: ['One', 'Two', 'Three'],
-//   typeSpeed: 150,
-//   backSpeed: 150,
-//   loop: true
-// });
-
 //mobile nav
 const hamburger = document.querySelector('.hamburger');
 const mobileNav = document.querySelector('.mobile-nav');
