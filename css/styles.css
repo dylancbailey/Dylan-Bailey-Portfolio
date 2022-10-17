@@ -54,7 +54,7 @@ li {
 }
 .hidden {
     opacity: 0;
-    transition: all 1s;
+    transition: all .6s;
 }
 .show {
     opacity: 1;
@@ -299,7 +299,6 @@ li {
     padding-top: 1rem;
     font-size: .8rem;
     font-weight: bold;
-    /* border-bottom: 2px solid var(--main-color); */
 }
 .arrow-right {
     height: 1.3rem;
