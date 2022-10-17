@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Dylan Bailey</title>
+    <title>Dylan Bailey - Web Developer</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
@@ -12,12 +12,110 @@
   </head>
   <body>
 
-    <div class="container">
-        <h1>My name is <span class="name">Dylan Bailey</span>.</h1>
-        <h3>I'm a <span class="auto-type"></span></h3>
+    <header class="container header">
+      <nav class="nav">
+        <h3 class="nav-lead"><a href="#">Dylan Bailey</a></h3>
+        <ul class="nav-list">
+          <li class="nav-item"><a href="#projects">Projects</a></li>
+          <li class="nav-item"><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </nav>
+    </header>
+
+    <div class="mobile-nav">
+      <ul class="mobile-nav-list">
+        <li class="mobile-nav-item"><a href="#projects">Projects</a></li>
+        <li class="mobile-nav-item"><a href="#contact">Contact</a></li>
+      </ul>
     </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <main class="container">
+      <section class="section bio">
+        <div class="bubbles">
+          <div class="bubble-left"></div>
+          <div class="bubble-middle"></div>
+          <div class="bubble-right"></div>
+        </div>
+        <h1 class="bio-heading">Front-End Web Developer using JavaScript to make the world more <span class="auto-typed">beautiful</span>.</h1>
+        <p class="bio-blurb">Howdy, I'm Dylan, a developer based in Florida. I love learning JavaScript and how to make engaging experiences through code.</p>
+        <p class="bio-link"><a href="#">View profile</a></p>
+      </section>
+  
+      <section id="projects" class="section projects">
+        <h2 class="section-heading">Recent projects</h2>
+        <div class="project-container hidden">
+          <a class="project-wrapper" href="#">
+              <figure class="img-wrapper">
+                <img class="project-img" src="img/emoji-app.png" alt="">
+              </figure>
+              <div class="project-info">
+                <h3 class="project-heading">Word Guessing App</h3>
+                <p class="project-desc">Emoji guessing game built with pure <span class="highlight">JavaScript</span> and <span class="highlight">CSS</span>.</p>
+                <p class="read-more">View project</p>
+              </div>
+          </a>
+        </div>
+
+        <div class="project-container hidden">
+          <a class="project-wrapper" href="#">
+            <figure class="img-wrapper">
+              <img class="project-img" src="img/web-app-dashboard.png" alt="">
+            </figure>
+            <div class="project-info">
+              <h3 class="project-heading">Web Dashboard App</h3>
+              <p class="project-desc">Responsive site using <span class="highlight">CSS Grid</span>, <span class="highlight">FlexBox</span> and <span class="highlight">JavaScript</span> for real-time charts.</p>
+              <p class="read-more">View project</p>
+            </div>
+          </a>
+        </div>
+
+        <div class="project-container hidden">
+          <a class="project-wrapper" href="#">
+            <figure class="img-wrapper">
+              <img class="project-img" src="img/employee-directory.png" alt="">
+            </figure>
+            <div class="project-info">
+              <h3 class="project-heading">Employee Directory</h3>
+              <p class="project-desc">Employee Directory using <span class="highlight">Fetch API</span> to populate dynamically.</p>
+              <p class="read-more">View project</p>
+            </div>
+          </a>
+        </div>
+
+        <div class="project-container hidden">
+          <a class="project-wrapper" href="#">
+            <figure class="img-wrapper">
+              <img class="project-img" src="img/bootstrap.png" alt="">
+            </figure>
+            <div class="project-info">
+              <h3 class="project-heading">Bootstrap Mockup</h3>
+              <p class="project-desc">Responsive website using <span class="highlight">Bootstrap 5</span>.</p>
+              <p class="read-more">View project</p>
+            </div>
+          </a>
+        </div>
+
+      </section>
+
+    </main>
+
+    <div class="container">
+      <footer class="footer">
+        <div class="icon-wrapper">
+          <img class="icon" src="./svg/svg-github.svg" alt="">
+          <img class="icon" src="./svg/svg-linkedin.svg" alt="">
+          <img class="icon" src="./svg/svg-twitter.svg" alt="">
+          <img class="icon" src="./svg/svg-slack.svg" alt="">
+        </div>
+        <p>&copy; Dylan Bailey 2022</p>
+      </footer>
+    </div>
+
     <script src="js/app.js"></script>
   </body>
 </html>
