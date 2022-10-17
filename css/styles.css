@@ -292,6 +292,10 @@ li {
     width: 20px;
     height: 20px;
     margin: 0 .3rem;
+    transition: all 0.3s ease;
+}
+.icon:hover {
+    filter: invert(1) sepia(0) saturate(5) hue-rotate(175deg);
 }
 
 
