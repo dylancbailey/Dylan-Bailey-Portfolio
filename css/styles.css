@@ -282,6 +282,18 @@ li {
     font-size: .7rem;
     opacity: 50%;
 }
+.icon-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: .5rem;
+}
+.icon {
+    width: 20px;
+    height: 20px;
+    margin: 0 .3rem;
+}
+
 
 /* MEDIA QUERIES */
 @media screen and (min-width: 418px) {
