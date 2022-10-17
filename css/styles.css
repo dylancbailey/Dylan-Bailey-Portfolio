@@ -259,6 +259,7 @@ li {
     width: 5%;
     height: 10%;
     fill: var(--main-white);
+    transform: rotate(90deg);
 }
 .project-container {
     margin-bottom: 2.5rem;
