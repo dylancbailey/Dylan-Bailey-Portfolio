@@ -21,3 +21,14 @@ const observer = new IntersectionObserver( (entries) => {
 
 const hiddenElements = document.querySelectorAll('.hidden');
 hiddenElements.forEach((e) => observer.observe(e));
+
+//typed
+var options = {
+  strings: ['beautiful.^1000', 'creative.^1000', 'fluid.^1000', 'reactive.^1000'],
+  typeSpeed: 150,
+  forwardSpeed: 150,
+  backSpeed: 150,
+  loop: true
+};
+
+var typed = new Typed('.auto-type', options);
