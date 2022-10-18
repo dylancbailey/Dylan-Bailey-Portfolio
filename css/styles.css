@@ -22,11 +22,12 @@ body {
     font-weight: 300;
     font-size: 18px;
     line-height: 1.15;
-    background: linear-gradient(270deg, #c06c84, #6c5b7b);
+    background-color: var(--main-color);
+    /* background: linear-gradient(270deg, #c06c84, #6c5b7b);
     background-size: 800% 800%;
     -webkit-animation: gradientPulse 60s ease infinite;
     -moz-animation: gradientPulse 60s ease infinite;
-    animation: gradientPulse 60s ease infinite;
+    animation: gradientPulse 60s ease infinite; */
     position: relative;
     color: var(--main-white);
 }
@@ -49,7 +50,7 @@ li {
 
 /* UTILITIES */
 .highlight {
-    color: var(--highlight);
+    color: var(--main-color-darker);
     font-weight: bold;
 }
 .hidden {
@@ -428,7 +429,6 @@ li {
 }
 .form-btn:hover {
     cursor: pointer;
-    background-color: var(--main-color);
 }
 .form-btn:active {
     box-shadow: inset 0 3px 4px hsla(0, 0%, 0%, 0.4);
